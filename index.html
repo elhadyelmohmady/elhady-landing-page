@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الهادي - تجارة الجملة | Elhady - Wholesale Trading</title>
+    <meta name="description" content="تطبيق الهادي لتجارة الجملة - أكبر العلامات التجارية بأفضل الأسعار. Elhady wholesale trading app.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-content">
+            <div class="logo">
+                <img src="../src/assets/logoTransparent.png" alt="Elhady Logo" class="logo-img">
+                <span class="logo-text" data-ar="الهادي" data-en="Elhady">الهادي</span>
+            </div>
+            <div class="nav-links">
+                <a href="#features" data-ar="المميزات" data-en="Features">المميزات</a>
+                <a href="#brands" data-ar="العلامات التجارية" data-en="Brands">العلامات التجارية</a>
+                <a href="#offers" data-ar="العروض" data-en="Offers">العروض</a>
+                <a href="#download" data-ar="حمّل التطبيق" data-en="Download">حمّل التطبيق</a>
+                <button class="lang-btn" id="langToggle" onclick="toggleLanguage()">EN</button>
+            </div>
+            <button class="mobile-menu-btn" id="mobileMenuBtn" onclick="toggleMobileMenu()">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div class="mobile-menu" id="mobileMenu">
+            <a href="#features" onclick="closeMobileMenu()" data-ar="المميزات" data-en="Features">المميزات</a>
+            <a href="#brands" onclick="closeMobileMenu()" data-ar="العلامات التجارية" data-en="Brands">العلامات التجارية</a>
+            <a href="#offers" onclick="closeMobileMenu()" data-ar="العروض" data-en="Offers">العروض</a>
+            <a href="#download" onclick="closeMobileMenu()" data-ar="حمّل التطبيق" data-en="Download">حمّل التطبيق</a>
+            <button class="lang-btn" onclick="toggleLanguage(); closeMobileMenu();">EN</button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-glow"></div>
+        <div class="container hero-content">
+            <div class="hero-text">
+                <div class="hero-badge" data-ar="تطبيق تجارة الجملة #1" data-en="#1 Wholesale Trading App">تطبيق تجارة الجملة #1</div>
+                <h1 data-ar="كل اللي محتاجه<br>لتجارتك في<br><span class='gold'>تطبيق واحد</span>" data-en="Everything You Need<br>For Your Business In<br><span class='gold'>One App</span>">كل اللي محتاجه<br>لتجارتك في<br><span class="gold">تطبيق واحد</span></h1>
+                <p class="hero-desc" data-ar="الهادي هو شريكك في تجارة الجملة. اطلب من أكبر العلامات التجارية زي بريل وإريال وبرسيل وغيرهم كتير بأسعار الجملة واستلم طلباتك لحد باب محلك." data-en="Elhady is your wholesale trading partner. Order from top brands like Pril, Ariel, Persil and many more at wholesale prices, delivered straight to your store.">الهادي هو شريكك في تجارة الجملة. اطلب من أكبر العلامات التجارية زي بريل وإريال وبرسيل وغيرهم كتير بأسعار الجملة واستلم طلباتك لحد باب محلك.</p>
+                <div class="hero-buttons">
+                    <a href="#download" class="btn btn-primary" data-ar="حمّل التطبيق مجاناً" data-en="Download Free">حمّل التطبيق مجاناً</a>
+                    <a href="#features" class="btn btn-outline" data-ar="اعرف أكتر" data-en="Learn More">اعرف أكتر</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">500+</span>
+                        <span class="stat-label" data-ar="منتج متاح" data-en="Products">منتج متاح</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat">
+                        <span class="stat-number">50+</span>
+                        <span class="stat-label" data-ar="علامة تجارية" data-en="Brands">علامة تجارية</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat">
+                        <span class="stat-number">24/7</span>
+                        <span class="stat-label" data-ar="اطلب في أي وقت" data-en="Order Anytime">اطلب في أي وقت</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-phone">
+                <div class="phone-mockup">
+                    <div class="phone-frame">
+                        <div class="phone-notch"></div>
+                        <div class="phone-screen">
+                            <div class="mock-header">
+                                <div class="mock-logo-text">الهادي</div>
+                                <div class="mock-search">
+                                    <span>ابحث عن منتج...</span>
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#9ca3af" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                                </div>
+                            </div>
+                            <div class="mock-banner">
+                                <span>عروض شهر أبريل</span>
+                                <small>خصومات حتى 30%</small>
+                            </div>
+                            <div class="mock-categories">
+                                <div class="mock-cat">منظفات</div>
+                                <div class="mock-cat">أغذية</div>
+                                <div class="mock-cat">عناية</div>
+                            </div>
+                            <div class="mock-products">
+                                <div class="mock-product">
+                                    <div class="mock-product-img"></div>
+                                    <div class="mock-product-name">بريل سائل أطباق</div>
+                                    <div class="mock-product-price">45 ج.م</div>
+                                </div>
+                                <div class="mock-product">
+                                    <div class="mock-product-img"></div>
+                                    <div class="mock-product-name">إريال مسحوق</div>
+                                    <div class="mock-product-price">120 ج.م</div>
+                                </div>
+                            </div>
+                            <div class="mock-tabbar">
+                                <div class="mock-tab active">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-4 0a1 1 0 01-1-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 01-1 1"/></svg>
+                                </div>
+                                <div class="mock-tab">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>
+                                </div>
+                                <div class="mock-tab cart-tab">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49A1.003 1.003 0 0020.42 4H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"/></svg>
+                                </div>
+                                <div class="mock-tab">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/></svg>
+                                </div>
+                                <div class="mock-tab">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll-indicator">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#E89612" stroke-width="2"><path d="M7 13l5 5 5-5M7 6l5 5 5-5"/></svg>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag" data-ar="ليه الهادي؟" data-en="Why Elhady?">ليه الهادي؟</span>
+                <h2 data-ar="كل اللي تجارتك محتاجاه" data-en="Everything Your Business Needs">كل اللي تجارتك محتاجاه</h2>
+                <p data-ar="التطبيق اللي هيوفرلك وقت وفلوس ويخلي تجارتك أسهل" data-en="The app that saves you time and money, making your business easier">التطبيق اللي هيوفرلك وقت وفلوس ويخلي تجارتك أسهل</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#E89612" stroke-width="2"><path d="M20.59 13.41l-7.17 7.17a2 2 0 01-2.83 0L2 12V2h10l8.59 8.59a2 2 0 010 2.82z"/><line x1="7" y1="7" x2="7.01" y2="7"/></svg>
+                    </div>
+                    <h3 data-ar="أسعار الجملة" data-en="Wholesale Prices">أسعار الجملة</h3>
+                    <p data-ar="أسعار مخصوص لتجار الجملة أقل من السوق. وفر أكتر كل ما طلبت أكتر." data-en="Special wholesale prices below market rate. The more you order, the more you save.">أسعار مخصوص لتجار الجملة أقل من السوق. وفر أكتر كل ما طلبت أكتر.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#E89612" stroke-width="2"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+                    </div>
+                    <h3 data-ar="توصيل لحد بابك" data-en="Doorstep Delivery">توصيل لحد بابك</h3>
+                    <p data-ar="اطلب وانت في محلك واحنا هنوصلك الطلب. مفيش داعي تروح وتيجي." data-en="Order from your store and we'll deliver. No need to go anywhere.">اطلب وانت في محلك واحنا هنوصلك الطلب. مفيش داعي تروح وتيجي.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#E89612" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+                    </div>
+                    <h3 data-ar="منتجات متنوعة" data-en="Wide Product Range">منتجات متنوعة</h3>
+                    <p data-ar="مئات المنتجات من أشهر العلامات التجارية في مكان واحد. منظفات، أغذية، عناية شخصية وأكتر." data-en="Hundreds of products from top brands in one place. Cleaning, food, personal care and more.">مئات المنتجات من أشهر العلامات التجارية في مكان واحد. منظفات، أغذية، عناية شخصية وأكتر.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#E89612" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                    </div>
+                    <h3 data-ar="اطلب في أي وقت" data-en="Order Anytime">اطلب في أي وقت</h3>
+                    <p data-ar="التطبيق شغال 24 ساعة. اطلب في أي وقت يناسبك وتابع طلبك لحظة بلحظة." data-en="The app works 24/7. Order anytime that suits you and track your order in real-time.">التطبيق شغال 24 ساعة. اطلب في أي وقت يناسبك وتابع طلبك لحظة بلحظة.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#E89612" stroke-width="2"><path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2"/><rect x="9" y="3" width="6" height="4" rx="1"/><path d="M9 14l2 2 4-4"/></svg>
+                    </div>
+                    <h3 data-ar="تتبع طلباتك" data-en="Track Orders">تتبع طلباتك</h3>
+                    <p data-ar="تابع حالة طلبك من لحظة الطلب لحد ما يوصلك. كل حاجة واضحة قدامك." data-en="Track your order status from placement to delivery. Everything is transparent.">تابع حالة طلبك من لحظة الطلب لحد ما يوصلك. كل حاجة واضحة قدامك.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#E89612" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg>
+                    </div>
+                    <h3 data-ar="آمن وموثوق" data-en="Safe & Trusted">آمن وموثوق</h3>
+                    <p data-ar="منتجات أصلية 100% من الشركات مباشرة. ضمان جودة على كل منتج." data-en="100% genuine products directly from manufacturers. Quality guaranteed on every product.">منتجات أصلية 100% من الشركات مباشرة. ضمان جودة على كل منتج.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Brands Section -->
+    <section class="brands" id="brands">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag" data-ar="شركاؤنا" data-en="Our Partners">شركاؤنا</span>
+                <h2 data-ar="أكبر العلامات التجارية" data-en="Top Brands">أكبر العلامات التجارية</h2>
+                <p data-ar="نتعامل مع أكبر الشركات عشان نوفرلك أفضل المنتجات بأحسن الأسعار" data-en="We partner with the biggest companies to bring you the best products at the best prices">نتعامل مع أكبر الشركات عشان نوفرلك أفضل المنتجات بأحسن الأسعار</p>
+            </div>
+            <div class="brands-scroll">
+                <div class="brands-track">
+                    <div class="brand-item">
+                        <div class="brand-logo-placeholder">Pril</div>
+                        <span>بريل</span>
+                    </div>
+                    <div class="brand-item">
+                        <div class="brand-logo-placeholder">Ariel</div>
+                        <span>إريال</span>
+                    </div>
+                    <div class="brand-item">
+                        <div class="brand-logo-placeholder">Persil</div>
+                        <span>برسيل</span>
+                    </div>
+                    <div class="brand-item">
+                        <div class="brand-logo-placeholder">Tide</div>
+                        <span>تايد</span>
+                    </div>
+                    <div class="brand-item">
+                        <div class="brand-logo-placeholder">Downy</div>
+                        <span>داوني</span>
+                    </div>
+                    <div class="brand-item">
+                        <div class="brand-logo-placeholder">Fairy</div>
+                        <span>فيري</span>
+                    </div>
+                    <div class="brand-item">
+                        <div class="brand-logo-placeholder">Dettol</div>
+                        <span>ديتول</span>
+                    </div>
+                    <div class="brand-item">
+                        <div class="brand-logo-placeholder">Clorox</div>
+                        <span>كلوركس</span>
+                    </div>
+                    <!-- Duplicated for infinite scroll -->
+                    <div class="brand-item">
+                        <div class="brand-logo-placeholder">Pril</div>
+                        <span>بريل</span>
+                    </div>
+                    <div class="brand-item">
+                        <div class="brand-logo-placeholder">Ariel</div>
+                        <span>إريال</span>
+                    </div>
+                    <div class="brand-item">
+                        <div class="brand-logo-placeholder">Persil</div>
+                        <span>برسيل</span>
+                    </div>
+                    <div class="brand-item">
+                        <div class="brand-logo-placeholder">Tide</div>
+                        <span>تايد</span>
+                    </div>
+                    <div class="brand-item">
+                        <div class="brand-logo-placeholder">Downy</div>
+                        <span>داوني</span>
+                    </div>
+                    <div class="brand-item">
+                        <div class="brand-logo-placeholder">Fairy</div>
+                        <span>فيري</span>
+                    </div>
+                    <div class="brand-item">
+                        <div class="brand-logo-placeholder">Dettol</div>
+                        <span>ديتول</span>
+                    </div>
+                    <div class="brand-item">
+                        <div class="brand-logo-placeholder">Clorox</div>
+                        <span>كلوركس</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Offers Section -->
+    <section class="offers" id="offers">
+        <div class="container">
+            <div class="offers-content">
+                <div class="offers-text">
+                    <span class="section-tag" data-ar="عروض شهرية" data-en="Monthly Offers">عروض شهرية</span>
+                    <h2 data-ar="عروض وخصومات<br>كل شهر" data-en="Discounts &<br>Offers Every Month">عروض وخصومات<br>كل شهر</h2>
+                    <p data-ar="كل شهر عندنا عروض جديدة وخصومات حصرية على أشهر المنتجات. حمّل التطبيق عشان توصلك الإشعارات أول بأول ومتفوتش أي عرض." data-en="Every month we have new offers and exclusive discounts on popular products. Download the app to get notifications first and never miss a deal.">كل شهر عندنا عروض جديدة وخصومات حصرية على أشهر المنتجات. حمّل التطبيق عشان توصلك الإشعارات أول بأول ومتفوتش أي عرض.</p>
+                    <ul class="offers-list">
+                        <li data-ar="خصومات تصل لـ 30% على منتجات مختارة" data-en="Up to 30% off on selected products">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="#E89612"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                            <span>خصومات تصل لـ 30% على منتجات مختارة</span>
+                        </li>
+                        <li data-ar="عروض حصرية لمستخدمي التطبيق" data-en="Exclusive deals for app users">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="#E89612"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                            <span>عروض حصرية لمستخدمي التطبيق</span>
+                        </li>
+                        <li data-ar="إشعارات فورية بالعروض الجديدة" data-en="Instant notifications for new offers">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="#E89612"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                            <span>إشعارات فورية بالعروض الجديدة</span>
+                        </li>
+                        <li data-ar="أسعار خاصة على الطلبات الكبيرة" data-en="Special prices for bulk orders">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="#E89612"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                            <span>أسعار خاصة على الطلبات الكبيرة</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="offers-visual">
+                    <div class="offer-card offer-card-1">
+                        <div class="offer-discount">30%</div>
+                        <div class="offer-label" data-ar="خصم" data-en="OFF">خصم</div>
+                    </div>
+                    <div class="offer-card offer-card-2">
+                        <div class="offer-discount">20%</div>
+                        <div class="offer-label" data-ar="خصم" data-en="OFF">خصم</div>
+                    </div>
+                    <div class="offer-card offer-card-3">
+                        <div class="offer-discount">15%</div>
+                        <div class="offer-label" data-ar="خصم" data-en="OFF">خصم</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How it works -->
+    <section class="how-it-works" id="how">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag" data-ar="إزاي تبدأ؟" data-en="How It Works?">إزاي تبدأ؟</span>
+                <h2 data-ar="3 خطوات بس" data-en="Just 3 Steps">3 خطوات بس</h2>
+            </div>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3 data-ar="حمّل التطبيق" data-en="Download the App">حمّل التطبيق</h3>
+                    <p data-ar="حمّل تطبيق الهادي مجاناً وسجّل حسابك في ثواني" data-en="Download Elhady app for free and create your account in seconds">حمّل تطبيق الهادي مجاناً وسجّل حسابك في ثواني</p>
+                </div>
+                <div class="step-arrow">
+                    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#E89612" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3 data-ar="اختار منتجاتك" data-en="Choose Products">اختار منتجاتك</h3>
+                    <p data-ar="تصفح المنتجات واختار اللي محتاجه وضيفه للسلة" data-en="Browse products, pick what you need, and add to cart">تصفح المنتجات واختار اللي محتاجه وضيفه للسلة</p>
+                </div>
+                <div class="step-arrow">
+                    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#E89612" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3 data-ar="استلم طلبك" data-en="Receive Your Order">استلم طلبك</h3>
+                    <p data-ar="أكد طلبك واستناه يوصلك لحد باب محلك" data-en="Confirm your order and wait for it to arrive at your doorstep">أكد طلبك واستناه يوصلك لحد باب محلك</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download Section -->
+    <section class="download" id="download">
+        <div class="download-glow"></div>
+        <div class="container download-content">
+            <div class="download-text">
+                <h2 data-ar="حمّل التطبيق دلوقتي<br>وابدأ تجارتك" data-en="Download Now<br>& Start Trading">حمّل التطبيق دلوقتي<br>وابدأ تجارتك</h2>
+                <p data-ar="انضم لآلاف التجار اللي بيستخدموا الهادي لتجارة الجملة. التطبيق متاح على أندرويد وآيفون." data-en="Join thousands of traders using Elhady for wholesale trading. Available on Android and iOS.">انضم لآلاف التجار اللي بيستخدموا الهادي لتجارة الجملة. التطبيق متاح على أندرويد وآيفون.</p>
+                <div class="store-buttons">
+                    <a href="#" class="store-btn">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="white"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg>
+                        <div>
+                            <small data-ar="حمّل من" data-en="Download on">حمّل من</small>
+                            <strong>App Store</strong>
+                        </div>
+                    </a>
+                    <a href="#" class="store-btn">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="white"><path d="M3.609 1.814L13.792 12 3.61 22.186a.996.996 0 01-.61-.92V2.734a1 1 0 01.609-.92zm10.89 10.893l2.302 2.302-10.937 6.333 8.635-8.635zm3.199-3.199l2.302 2.302L18.69 12.5l-1.192-1.192 1.192-1.192 1.008.392zm-3.906-3.906L4.854 12.14l10.938-6.538z"/></svg>
+                        <div>
+                            <small data-ar="حمّل من" data-en="Get it on">حمّل من</small>
+                            <strong>Google Play</strong>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <img src="../src/assets/logoTransparent.png" alt="Elhady Logo" class="logo-img">
+                        <span class="logo-text" data-ar="الهادي" data-en="Elhady">الهادي</span>
+                    </div>
+                    <p data-ar="شريكك في تجارة الجملة. أكبر العلامات التجارية بأفضل الأسعار." data-en="Your wholesale trading partner. Top brands at the best prices.">شريكك في تجارة الجملة. أكبر العلامات التجارية بأفضل الأسعار.</p>
+                </div>
+                <div class="footer-links">
+                    <h4 data-ar="روابط سريعة" data-en="Quick Links">روابط سريعة</h4>
+                    <a href="#features" data-ar="المميزات" data-en="Features">المميزات</a>
+                    <a href="#brands" data-ar="العلامات التجارية" data-en="Brands">العلامات التجارية</a>
+                    <a href="#offers" data-ar="العروض" data-en="Offers">العروض</a>
+                    <a href="#download" data-ar="حمّل التطبيق" data-en="Download">حمّل التطبيق</a>
+                </div>
+                <div class="footer-links">
+                    <h4 data-ar="قانوني" data-en="Legal">قانوني</h4>
+                    <a href="privacy-policy.html" data-ar="سياسة الخصوصية" data-en="Privacy Policy">سياسة الخصوصية</a>
+                    <a href="terms-conditions.html" data-ar="الشروط والأحكام" data-en="Terms & Conditions">الشروط والأحكام</a>
+                </div>
+                <div class="footer-links">
+                    <h4 data-ar="تواصل معنا" data-en="Contact Us">تواصل معنا</h4>
+                    <a href="mailto:info@elhady.com">info@elhady.com</a>
+                    <a href="tel:+201000000000">+20 100 000 0000</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p data-ar="© 2026 الهادي. جميع الحقوق محفوظة." data-en="© 2026 Elhady. All rights reserved.">© 2026 الهادي. جميع الحقوق محفوظة.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
